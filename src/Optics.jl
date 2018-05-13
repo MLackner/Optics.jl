@@ -1,5 +1,12 @@
+__precompile__(false)
+
 module Optics
 
-# package code goes here
+import RefractiveIndex: Material
+
+include("reflection.jl")
+include("transmittance.jl")
+
+export phaseangle, reflection, snellius, transmittance
 
 end # module
